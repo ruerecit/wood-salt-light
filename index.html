@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noimageindex">
+<meta name="referrer" content="no-referrer">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Wood, Salt &amp; Light</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400;1,6..96,500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Reenie+Beanie&family=DM+Mono:wght@300;400&display=swap">
+<style>
+/* Layout: full-bleed photographs pinned while words drift over them, broken by loose paper spreads of taped prints, sketches, food, people and words. One continuous scroll, arrival to departure. */
+:root{
+  --fog:#E3E5E0;        /* sea-fog paper */
+  --fog-deep:#D4D8D1;
+  --ink:#1D2324;
+  --graphite:#6E7672;
+  --pen:#2E4C78;        /* fountain-pen blue */
+  --sea:#1F4A4C;        /* Cantabrian green-blue */
+  --light:#F7F7F3;
+  --display:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+  --body:"Newsreader","Iowan Old Style",Georgia,serif;
+  --hand:"Reenie Beanie","Bradley Hand","Segoe Print",cursive;
+  --mono:"DM Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--fog);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.6;margin:0;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+figure{margin:0}
+
+/* ---------- grain + photo placeholders ---------- */
+.grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.22;mix-blend-mode:overlay;z-index:1;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.ph{position:relative;overflow:hidden;background:#55605d}
+.ph,.sky{filter:saturate(.82) contrast(.96)}
+.ph .tag{position:absolute;left:max(16px,env(safe-area-inset-left,0px));bottom:18px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,247,243,.75);z-index:4}
+.ph-cover{background:linear-gradient(180deg,#26333f 0%,#4d6070 34%,#9c9a92 58%,#c8a585 66%,#3b3d3f 67%,#1d2023 100%)}
+.ph-night{background:radial-gradient(ellipse at 28% 72%,#c27a33 0%,#6b3f22 22%,#24190f 52%,#0f0f10 85%)}
+.ph-wood{background:repeating-linear-gradient(102deg,rgba(60,32,14,.18) 0 2px,transparent 2px 11px),repeating-linear-gradient(98deg,rgba(255,236,205,.10) 0 1px,transparent 1px 23px),linear-gradient(112deg,#c79d6f 0%,#93623f 30%,#d7b186 52%,#7b4e2e 78%,#b88859 100%)}
+.ph-getaria{background:linear-gradient(180deg,#a9b6b8 0%,#8ea2a1 38%,#6e8a78 39%,#55704f 62%,#34472f 100%)}
+.ph-hills{background:radial-gradient(ellipse 80% 40% at 30% 100%,#3f5a3a 0 60%,transparent 61%),radial-gradient(ellipse 70% 45% at 85% 100%,#566f48 0 60%,transparent 61%),linear-gradient(180deg,#c3c9c4 0%,#a4b0a8 45%,#7e9278 70%,#4f6644 100%)}
+.ph-chillida{background:linear-gradient(180deg,#b6bcb1 0%,#97a28e 46%,#76855f 58%,#5d6c47 70%)}
+.ph-chillida::before{content:"";position:absolute;left:52%;bottom:16%;width:min(34vw,320px);height:min(30vw,280px);background:linear-gradient(160deg,#9a4b24,#5e2a14 70%);clip-path:polygon(0 18%,46% 0,100% 12%,92% 100%,8% 100%);opacity:.92}
+.ph-borda{background:linear-gradient(180deg,#d2d5cd 0%,#a6ae9e 44%,#77836b 70%,#4d5745 100%)}
+.ph-rain{background:repeating-linear-gradient(104deg,rgba(255,255,255,.07) 0 1px,transparent 1px 9px),linear-gradient(180deg,#9aa3a3 0%,#7d8a8b 50%,#4f5d5f 100%)}
+.ph-titanium{background:linear-gradient(128deg,#d5d8dc 0%,#8b929b 26%,#e6e8ea 41%,#6b737d 58%,#c3c7cc 74%,#4c535c 100%)}
+.ph-ria{background:linear-gradient(180deg,#dcdedb 0%,#a9b2b1 40%,#6f7f80 62%,#3c4b4e 100%)}
+.ph-people{background:radial-gradient(circle at 35% 40%,#c99e83 0 12%,transparent 13%),radial-gradient(circle at 66% 44%,#a87a5f 0 11%,transparent 12%),linear-gradient(180deg,#6a6560 0%,#4a4642 100%)}
+.ph-hands{background:radial-gradient(ellipse 30% 18% at 50% 58%,#c49376 0 70%,transparent 72%),linear-gradient(115deg,#b48a5e,#7c5534 60%,#a07650)}
+.ph-pintxo{background:radial-gradient(ellipse 34% 22% at 50% 55%,#e2b66a 0 50%,#8a4f23 70%,transparent 72%),linear-gradient(180deg,#3a2c22,#1d1712)}
+.ph-txakoli{background:linear-gradient(90deg,transparent 40%,rgba(255,250,220,.55) 41% 59%,transparent 60%),linear-gradient(180deg,#b9c3a2 0%,#e5dfa8 45%,#8e9a6b 100%)}
+.ph-fish{background:radial-gradient(ellipse 42% 16% at 50% 52%,#c8b9a4 0 60%,#5b4a3b 80%,transparent 82%),linear-gradient(180deg,#2c2a27,#4b4038)}
+.ph-cheese{background:radial-gradient(circle at 50% 55%,#efe2c0 0 26%,#c9a96b 27% 30%,transparent 31%),linear-gradient(160deg,#6b5a46,#3a3027)}
+.ph-coffee{background:radial-gradient(circle at 50% 52%,#5a3a24 0 20%,#efe9df 21% 30%,transparent 31%),linear-gradient(180deg,#c9c1b4,#8a8073)}
+
+/* sky scenes for sunrise / sunset */
+.sky{position:relative;overflow:hidden}
+.sky .sun{position:absolute;left:var(--sx,60%);top:var(--sy,58%);width:min(26vw,220px);aspect-ratio:1;border-radius:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(255,240,210,.95) 0 38%,rgba(255,206,150,.35) 55%,transparent 70%);z-index:1}
+.sky-rise{background:linear-gradient(180deg,#36435c 0%,#7a7f98 30%,#d5a6a0 52%,#f0c79a 62%,#6b7a7e 63%,#2f3b3e 100%)}
+.sky-set{background:linear-gradient(180deg,#1e2a44 0%,#4b4a6a 28%,#b5687a 48%,#e89a62 58%,#3a3f4a 59%,#151a20 100%)}
+.sky-set-sea{background:linear-gradient(180deg,#22304a 0%,#5d5774 30%,#c97c6a 50%,#f1b072 57%,#516a74 58%,#1f2b31 100%)}
+
+/* ---------- scenes: pinned photo, words scroll over ---------- */
+.scene{position:relative}
+.scene>.bg{position:sticky;top:0;height:100vh;height:100svh;width:100%}
+.scene>.over{position:relative;z-index:3;margin-top:-100vh;margin-top:-100svh;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));color:var(--light)}
+.beat{min-height:100vh;min-height:100svh;display:flex;padding-block:12vh}
+.beat.short{min-height:70vh;min-height:70svh}
+.beat.top{align-items:flex-start}.beat.mid{align-items:center}.beat.low{align-items:flex-end}
+.beat.right{justify-content:flex-end}.beat.center{justify-content:center;text-align:center}
+.scrim{position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,rgba(10,14,16,.38),rgba(10,14,16,0) 38%,rgba(10,14,16,0) 58%,rgba(10,14,16,.5))}
+.words{max-width:30rem;text-shadow:0 1px 18px rgba(0,0,0,.35)}
+.stamp{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;opacity:.88;font-variant-numeric:tabular-nums}
+.day-title{font-family:var(--display);font-style:italic;font-weight:400;font-size:clamp(3.4rem,11vw,8.5rem);line-height:.92;letter-spacing:-.02em;margin:.25em 0 .2em;text-wrap:balance}
+.eus{font-family:var(--hand);font-size:clamp(1.7rem,4vw,2.3rem);line-height:1}
+.dayname{font-family:var(--hand);font-size:clamp(1.5rem,3.2vw,2rem);line-height:1;opacity:.92;margin-top:6px}
+.eus small{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.72;margin-left:.6em}
+.over p{font-size:clamp(1.15rem,2.4vw,1.45rem);line-height:1.5;font-weight:300;margin:0}
+.over p+p{margin-top:.9em}
+.pull{font-family:var(--display);font-style:italic;font-size:clamp(2rem,5.5vw,3.6rem);line-height:1.08;max-width:18ch;text-wrap:balance;margin:0}
+.clock{font-family:var(--display);font-weight:400;font-size:clamp(4.5rem,16vw,11rem);line-height:.9;letter-spacing:-.03em;font-variant-numeric:lining-nums}
+.clock-words{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;opacity:.85;margin-top:12px}
+.clock-words b{font-family:var(--hand);font-weight:400;font-size:2rem;letter-spacing:0;text-transform:none;margin-right:.35em}
+
+/* prompts: reminders to notice, taste, listen, sketch */
+.prompt{font-style:italic;opacity:.8;text-decoration:underline dotted rgba(255,255,255,.45) 1px;text-underline-offset:5px}
+.paper .prompt{color:var(--graphite);opacity:1;text-decoration-color:rgba(110,118,114,.5)}
+.verb{display:inline-block;font-family:var(--mono);font-style:normal;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;border:1px solid currentColor;border-radius:999px;padding:2px 8px 1px;margin-right:8px;vertical-align:.25em;opacity:.85;text-decoration:none}
+
+/* ---------- cover ---------- */
+.cover .over{display:flex;flex-direction:column;justify-content:space-between;min-height:100vh;min-height:100svh;padding-block:max(64px,calc(env(safe-area-inset-top,0px) + 56px)) 9vh}
+.cover h1{font-family:var(--display);font-weight:400;font-style:italic;font-size:clamp(4rem,15vw,12.5rem);line-height:.84;letter-spacing:-.035em;margin:0;text-wrap:balance}
+.cover h1 span{display:block;font-style:normal;padding-left:.9em}
+.cover .meta{display:flex;flex-wrap:wrap;gap:6px 26px;align-items:baseline}
+.cover .sub{font-family:var(--hand);font-size:clamp(1.8rem,4.4vw,2.6rem);line-height:1}
+
+/* ---------- paper spreads ---------- */
+.paper{position:relative;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:clamp(64px,11vw,130px)}
+.paper.deep{background:var(--fog-deep)}
+.spread{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:28px;align-items:start}
+.note{font-family:var(--hand);color:var(--pen);font-size:clamp(1.7rem,3.2vw,2.15rem);line-height:1.12;margin:0}
+.note.big{font-size:clamp(2.2rem,5vw,3.2rem)}
+.note.soft{color:var(--graphite)}
+.label{font-family:var(--mono);font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--graphite)}
+.essay{font-size:1.15rem;line-height:1.7;max-width:34rem}
+.essay p{margin:0 0 1em}
+.essay.drop p:first-of-type::first-letter{font-family:var(--display);font-style:italic;float:left;font-size:4.2em;line-height:.8;padding:.06em .1em 0 0;color:var(--sea)}
+
+.print{position:relative;background:#fbfbf8;padding:10px 10px 38px;box-shadow:0 1px 2px rgba(0,0,0,.08),0 14px 30px -12px rgba(20,30,30,.35);transform:rotate(var(--r,0deg));transition:transform .4s ease;max-width:100%}
+.print:hover{transform:rotate(0deg) scale(1.02)}
+.print .ph{aspect-ratio:var(--ar,4/5);max-width:100%}
+.print figcaption{position:absolute;left:12px;right:12px;bottom:6px;font-family:var(--hand);color:var(--pen);font-size:1.45rem;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tape{position:absolute;top:-12px;left:50%;width:84px;height:24px;transform:translateX(-50%) rotate(var(--tr,-3deg));background:rgba(232,226,205,.72);box-shadow:0 1px 1px rgba(0,0,0,.06);z-index:2}
+.sketch{position:relative;aspect-ratio:var(--ar,3/4);max-width:100%;border:1.5px dashed rgba(46,76,120,.38);border-radius:3px;display:grid;place-items:center;text-align:center;padding:20px;background:
+  linear-gradient(rgba(46,76,120,.05) 1px,transparent 1px) 0 0/22px 22px,linear-gradient(90deg,rgba(46,76,120,.05) 1px,transparent 1px) 0 0/22px 22px,#eef0ec}
+.sketch .note{font-size:1.7rem}
+
+/* "on the table": a strip of small square prints */
+.table-strip{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px;margin-top:10px}
+.table-strip .print{--ar:1/1}
+.table-strip .print:nth-child(odd){margin-top:26px}
+
+/* word cards */
+.word{position:relative;background:#f4f5f1;border:1px solid rgba(29,35,36,.12);padding:22px 22px 18px;transform:rotate(var(--r,0deg));max-width:100%}
+.word .eu{font-family:var(--display);font-style:italic;font-size:clamp(2rem,4.2vw,2.8rem);line-height:1;color:var(--sea);margin:0 0 12px}
+.word dl{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin:0;font-family:var(--mono);font-size:12px;letter-spacing:.06em}
+.word dt{color:var(--graphite);text-transform:uppercase;letter-spacing:.14em;font-size:10.5px;padding-top:1px}
+.word dd{margin:0;color:var(--ink)}
+.word .say{font-family:var(--hand);color:var(--pen);font-size:1.5rem;line-height:1;margin-top:10px}
+
+/* route */
+.route{grid-column:1/-1;margin-top:clamp(40px,7vw,80px)}
+.route-wrap{overflow-x:auto}
+.route svg{display:block;width:100%;min-width:620px;height:auto}
+
+/* glossary */
+.glossary{grid-column:1/-1;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:0 34px;margin-top:26px}
+.glossary div{display:grid;grid-template-columns:1fr;padding:14px 0;border-top:1px solid rgba(29,35,36,.14);min-width:0}
+.glossary b{font-family:var(--display);font-style:italic;font-weight:400;font-size:1.55rem;line-height:1.1;color:var(--sea)}
+.glossary span{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--graphite)}
+
+/* diptych: two photos edge to edge */
+.diptych{display:grid;grid-template-columns:1fr 1fr;gap:clamp(10px,1.6vw,22px);padding:clamp(10px,1.6vw,22px);background:#f7f7f3}
+.diptych .ph{aspect-ratio:1/1;max-width:100%}
+.diptych figcaption{font-family:var(--hand);color:var(--pen);font-size:1.5rem;margin-top:6px;padding-left:4px}
+
+/* ---------- day index ---------- */
+.index{position:fixed;z-index:20;top:calc(14px + env(safe-area-inset-top,0px));right:max(16px,env(safe-area-inset-right,0px));display:flex;gap:4px;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;background:rgba(29,35,36,.42);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:6px 8px;border-radius:999px}
+.index a{color:rgba(247,247,243,.66);text-decoration:none;padding:3px 7px;border-radius:999px;transition:background .3s,color .3s}
+.index a.on{color:var(--ink);background:var(--light)}
+.index a:focus-visible{outline:2px solid var(--light);outline-offset:2px}
+
+.legend{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;margin-top:28px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--graphite)}
+.legend i{font-family:var(--body);font-size:15px;letter-spacing:0;text-transform:none;font-style:italic;text-decoration:underline dotted rgba(110,118,114,.6) 1px;text-underline-offset:4px}
+.legend .verb{color:var(--graphite);margin:0}
+
+footer{background:var(--ink);color:rgba(247,247,243,.8);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:72px 64px}
+footer .spread{align-items:end}
+footer .note{color:var(--light)}
+
+@media (max-width:760px){
+  body{font-size:17px}
+  .spread{grid-template-columns:repeat(6,minmax(0,1fr));gap:24px}
+  .index{font-size:9.5px;gap:1px;padding:5px 6px}.index a{padding:3px 5px}
+  
+  .cover h1 span{padding-left:.5em}
+  [class*="c-"]{grid-column:1/-1!important;margin-top:0!important}
+  .spread>.print{max-width:86%;justify-self:center}
+  .table-strip{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+  .word{max-width:92%;justify-self:center}
+  .diptych{grid-template-columns:1fr}
+}
+
+.ph>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--pos,50% 50%);display:block}
+.print .ph>img{position:absolute}
+.drawn{max-width:100%}
+@media (max-width:760px){.spread>.print{width:86%}}
+.drawn img{display:block;width:100%;height:auto;mix-blend-mode:multiply;transform:rotate(var(--r,0deg))}
+.over .pull{font-size:clamp(2rem,5.5vw,3.6rem);line-height:1.08;font-weight:400}
+.day-title.long{font-size:clamp(2.8rem,7.5vw,6.2rem)}
+.essay .said{font-family:var(--display);font-style:italic;font-size:clamp(1.6rem,3vw,2.1rem);line-height:1.2;color:var(--ink)}
+.testbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--ink);color:var(--light);font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding-block:8px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:31;background:var(--ink)}
+</style>
+</head>
+<body>
+
+
+<div class="testbar">Test page &middot; the trip diary will appear here</div>
+
+<section class="scene">
+  <div class="bg ph grain" style="--pos:50% 60%"><img src="img/test-lobby.jpg" alt="A tall, warm lobby with stone walls, tall windows and a polished floor"><div class="scrim"></div></div>
+  <div class="over">
+    <div class="beat top">
+      <div class="words">
+        <div class="stamp">Fri 23 Oct &middot; test check-in</div>
+        <div class="dayname">ostirala &middot; viernes</div>
+        <h2 class="day-title long">A chance to recenter.</h2>
+      </div>
+    </div>
+    <div class="beat low right">
+      <div class="words">
+        <p class="pull">Expansive, warm, friendly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="paper">
+  <div class="spread">
+    <figure class="drawn c-a" style="grid-column:1 / span 7;--r:-1deg"><img src="img/test-sketch-water.jpg" alt="iPad sketch: water between trees and a building edge, in blue and green"></figure>
+    <figure class="drawn c-b" style="grid-column:9 / span 4;--r:1.5deg;margin-top:40px"><img src="img/test-sketch-lobby.jpg" alt="iPad sketch: a tall wall of windows in warm amber tones"></figure>
+  </div>
+</section>
+
+<section class="paper deep">
+  <div class="spread">
+    <figure class="print c-a" style="grid-column:1 / span 4;--r:-2deg;--ar:3/4">
+      <span class="tape"></span><div class="ph"><img src="img/test-alley.jpg" alt="Fire escapes zigzagging down a pale brick building in a narrow alley"></div>
+    </figure>
+    <figure class="print c-b" style="grid-column:5 / span 4;--r:2.5deg;--ar:3/4;margin-top:70px">
+      <span class="tape" style="--tr:4deg"></span><div class="ph"><img src="img/test-sticky-notes.jpg" alt="Orange sticky notes on a glass wall"></div>
+    </figure>
+    <div class="c-c" style="grid-column:9 / span 4;margin-top:30px">
+      <div class="essay"><p class="said">It&rsquo;s another world out here.</p></div>
+      <p class="note big" style="margin-top:22px;transform:rotate(-2deg)">Missing you guys!</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="spread">
+    <div class="c-a" style="grid-column:1 / span 7"><p class="note big">Eskerrik asko.</p></div>
+    <div class="c-b stamp" style="grid-column:9 / span 4;text-align:right;opacity:.6">Wood, Salt &amp; Light &middot; test page</div>
+  </div>
+</footer>
+
+</body>
+</html>
