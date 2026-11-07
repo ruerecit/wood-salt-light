@@ -113,6 +113,8 @@ figure{margin:0}
 .print{position:relative;background:#fbfbf8;padding:10px 10px 38px;box-shadow:0 1px 2px rgba(0,0,0,.08),0 14px 30px -12px rgba(20,30,30,.35);transform:rotate(var(--r,0deg));transition:transform .4s ease;max-width:100%}
 .print:hover{transform:rotate(0deg) scale(1.02)}
 .print .ph{aspect-ratio:var(--ar,4/5);max-width:100%}
+.ph>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--pos,50% 50%);display:block}
+.credit{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--graphite);margin-top:10px}
 .print figcaption{position:absolute;left:12px;right:12px;bottom:6px;font-family:var(--hand);color:var(--pen);font-size:1.45rem;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .tape{position:absolute;top:-12px;left:50%;width:84px;height:24px;transform:translateX(-50%) rotate(var(--tr,-3deg));background:rgba(232,226,205,.72);box-shadow:0 1px 1px rgba(0,0,0,.06);z-index:2}
 .sketch{position:relative;aspect-ratio:var(--ar,3/4);max-width:100%;border:1.5px dashed rgba(46,76,120,.38);border-radius:3px;display:grid;place-items:center;text-align:center;padding:20px;background:
@@ -204,22 +206,38 @@ footer .note{color:var(--light)}
 <section class="paper">
   <div class="spread">
     <div class="c-a" style="grid-column:1 / span 6">
-      <div class="label" style="margin-bottom:22px">Before · Herndon</div>
+      <div class="label" style="margin-bottom:22px">Before · Herndon → Dulles · Sat 7 Nov</div>
       <div class="essay drop">
-        <p class="prompt">Why this trip, why now. What you hope to see, what was on your desk the week you left, what you want to bring back.</p>
-        <p class="prompt">Who you're travelling with, and what it felt like to meet them at the gate.</p>
+        <p>It&rsquo;s sunny and windy at home. I feel very energized, but I&rsquo;m already missing Mateo and Brian.</p>
+        <p>As we arrived at Dulles, we all said how much we like the Saarinen terminal. It&rsquo;s so special.</p>
       </div>
-      <div class="legend">
-        <i>Grey dotted text</i> is a prompt to replace with your words.
-        <span class="verb">notice</span><span class="verb">taste</span><span class="verb">listen</span><span class="verb">sketch</span><span class="verb">ask</span>
-        are small nudges for the day.
-      </div>
+      <p class="note" style="margin-top:18px;transform:rotate(-1.5deg)">leaving word: <b style="font-weight:400;color:var(--sea)">energized</b></p>
     </div>
-    <figure class="print c-b" style="grid-column:8 / span 4;--r:2.4deg;--ar:4/5;margin-top:40px">
-      <span class="tape"></span><div class="ph ph-ria grain"></div>
-      <figcaption>packing the night before</figcaption>
+    <figure class="print c-b" style="grid-column:8 / span 5;--r:2deg;margin-top:40px">
+      <span class="tape"></span><div class="ph" style="aspect-ratio:4/3"><img src="img/before-dulles-inside.jpg" alt="Looking up inside the Dulles terminal: concrete beams, dark steel hangers and cables against long skylights" loading="lazy"></div>
+      <figcaption>looking up · Dulles</figcaption>
     </figure>
-    <p class="note c-x" style="grid-column:8 / span 5;margin-top:-6px;transform:rotate(-2deg)">one new page every evening ↓</p>
+
+    <figure class="print c-a" style="grid-column:1 / span 4;--r:-2.5deg;margin-top:56px">
+      <span class="tape" style="--tr:4deg"></span><div class="ph" style="aspect-ratio:4/5"><img src="img/before-dulles-1960s.jpg" alt="Archival colour photo of the Dulles terminal at dusk: leaning concrete piers and a swooping roof above tall glass walls" loading="lazy"></div>
+      <figcaption>Dulles, early 1960s</figcaption>
+    </figure>
+    <div class="c-b" style="grid-column:6 / span 7;margin-top:72px">
+      <div class="word" style="--r:.8deg">
+        <p class="eu">Eero Saarinen</p>
+        <dl>
+          <dt>Building</dt><dd>Washington Dulles Main Terminal</dd>
+          <dt>Built</dt><dd>1960&ndash;62; dedicated 17 Nov 1962 by President Kennedy</dd>
+          <dt>Architect</dt><dd>Eero Saarinen (1910&ndash;1961), who died before it opened; his office, led by Kevin Roche &amp; John Dinkeloo, finished it</dd>
+          <dt>Engineers</dt><dd>Ammann &amp; Whitney</dd>
+          <dt>The roof</dt><dd>Concrete slabs hung on steel cables between leaning concrete piers, dipping in the middle like a hammock</dd>
+          <dt>Later</dt><dd>1996: Skidmore, Owings &amp; Merrill extended it from 600 to 1,240 ft, in the same form</dd>
+        </dl>
+        <p class="say">&ldquo;so special&rdquo;</p>
+      </div>
+      <p class="credit">Archival photo: via Modernist Collection</p>
+    </div>
+    <p class="note c-x" style="grid-column:1 / span 8;margin-top:30px;transform:rotate(-2deg)">one new page every evening ↓</p>
 
     <div class="route">
       <div class="label" style="margin-bottom:10px">The way there</div>
