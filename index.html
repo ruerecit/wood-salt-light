@@ -77,6 +77,8 @@ figure{margin:0}
 .words{max-width:30rem;text-shadow:0 1px 18px rgba(0,0,0,.35)}
 .stamp{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;opacity:.88;font-variant-numeric:tabular-nums}
 .day-title{font-family:var(--display);font-style:italic;font-weight:400;font-size:clamp(3.4rem,11vw,8.5rem);line-height:.92;letter-spacing:-.02em;margin:.25em 0 .2em;text-wrap:balance}
+.sub-title{font-family:var(--display);font-style:italic;font-weight:400;font-size:clamp(1.9rem,4.6vw,3rem);line-height:1;letter-spacing:-.01em;color:var(--ink);margin:0;display:flex;align-items:flex-end;justify-content:center;gap:.04em}
+.sub-title .cap{font-size:3.4em;line-height:.72;color:var(--sea);margin-right:.02em}
 .eus{font-family:var(--hand);font-size:clamp(1.7rem,4vw,2.3rem);line-height:1}
 .dayname{font-family:var(--hand);font-size:clamp(1.5rem,3.2vw,2rem);line-height:1;opacity:.92;margin-top:6px}
 .eus small{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.72;margin-left:.6em}
@@ -863,7 +865,7 @@ footer .note{color:var(--light)}
     </figure>
     <div class="c-c" style="grid-column:1 / -1;margin-top:clamp(64px,9vw,110px);padding-top:clamp(28px,4vw,44px);border-top:1px solid rgba(110,118,114,.35);text-align:center">
       <div class="label" style="margin-bottom:12px">Biarritz · especially for</div>
-      <h2 class="day-title" style="color:var(--ink);margin:0">Cars for Mateo</h2>
+      <h2 class="sub-title" aria-label="Cars for Mateo"><span class="cap">C</span><span>ars for Mateo</span></h2>
       <div class="eus" style="color:var(--ink);justify-content:center;margin-top:12px">autoak<small style="color:var(--graphite)">los coches · cars</small></div>
       <p class="note big" style="margin-top:22px;color:var(--sea);transform:rotate(-1.5deg)">I took lots of car photos for Mateo, per his request.</p>
     </div>
