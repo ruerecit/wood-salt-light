@@ -126,6 +126,9 @@ figure{margin:0}
 .table-strip{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px;margin-top:10px}
 .table-strip .print{--ar:1/1}
 .table-strip .print:nth-child(odd){margin-top:26px}
+.table-strip{align-items:start}
+.table-strip.cars{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:760px){.table-strip.cars{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 /* word cards */
 .word{position:relative;background:#f4f5f1;border:1px solid rgba(29,35,36,.12);padding:22px 22px 18px;transform:rotate(var(--r,0deg));max-width:100%}
@@ -794,7 +797,7 @@ footer .note{color:var(--light)}
 </section>
 
 <section class="scene">
-  <div class="bg ph ph-cover grain"><div class="scrim"></div><span class="tag">Photo · the Atlantic at Biarritz</span></div>
+  <div class="bg ph grain"><img src="img/wed-grande-plage.jpg" alt="Biarritz Grande Plage under a grey sky: surf rolling onto a wide curve of sand, the lighthouse on the far headland, the white casino along the promenade" style="--pos:50% 60%"><div class="scrim"></div></div>
   <div class="over">
     <div class="beat top">
       <div class="words">
@@ -822,14 +825,41 @@ footer .note{color:var(--light)}
         <dl><dt>Armistice Day</dt><dd>a French national holiday marking the end of the fighting in the First World War, on 11 November 1918</dd></dl>
       </div>
     </div>
+    <figure class="print c-a" style="grid-column:1 / span 7;--r:-1deg;margin-top:44px">
+      <span class="tape" style="--tr:3deg"></span><div class="ph" style="aspect-ratio:1800/1350"><img src="img/wed-villa-belza.jpg" alt="Villa Belza, a turreted villa on the rocks above the sea, misty hills of the Basque coast behind" loading="lazy"></div>
+      <figcaption>Villa Belza, in the mist</figcaption>
+    </figure>
+    <figure class="print c-b" style="grid-column:9 / span 4;--r:2deg;margin-top:70px">
+      <span class="tape" style="--tr:-4deg"></span><div class="ph" style="aspect-ratio:1350/1800"><img src="img/wed-virgin.jpg" alt="The white statue of the Virgin on top of the Rocher de la Vierge, a seagull perched on her head and another on the rock" loading="lazy"></div>
+      <figcaption>the Virgin, with gulls</figcaption>
+    </figure>
+    <div class="table-strip" style="margin-top:40px">
+      <figure class="print" style="--r:-1.5deg"><span class="tape" style="--tr:-3deg"></span><div class="ph" style="aspect-ratio:1800/1350"><img src="img/wed-bridge.jpg" alt="A stone footbridge arching over the sand to a green-topped rock, the church above the town" loading="lazy"></div><figcaption>the footbridge</figcaption></figure>
+      <figure class="print" style="--r:2deg"><span class="tape" style="--tr:4deg"></span><div class="ph" style="aspect-ratio:1800/1350"><img src="img/wed-rocks.jpg" alt="Low tide: mossy rock shelves, tide pools and a cave at the foot of the cliff, a rock island offshore" loading="lazy"></div><figcaption>low tide</figcaption></figure>
+      <figure class="print" style="--r:-1deg"><span class="tape" style="--tr:-2deg"></span><div class="ph" style="aspect-ratio:1800/1350"><img src="img/wed-rocher.jpg" alt="The long rock of the Rocher de la Vierge reaching into green water, the white Art Deco museum and the town behind" loading="lazy"></div><figcaption>the Rocher de la Vierge</figcaption></figure>
+      <figure class="print" style="--r:2.5deg"><span class="tape" style="--tr:-5deg"></span><div class="ph" style="aspect-ratio:1350/1800"><img src="img/wed-tunnel.jpg" alt="Looking through a rough stone tunnel to two women at the sea wall and the grey Atlantic" loading="lazy"></div><figcaption>through the tunnel</figcaption></figure>
+    </div>
+    <figure class="print c-a" style="grid-column:2 / span 5;--r:-1.5deg;margin-top:44px">
+      <span class="tape" style="--tr:4deg"></span><div class="ph" style="aspect-ratio:1350/1800"><img src="img/wed-agave-dennis.jpg" alt="Dennis in sunglasses, mouth open in mock surprise, beside a giant agave on the cliff path" loading="lazy"></div>
+      <figcaption>Dennis and the giant agave</figcaption>
+    </figure>
+    <figure class="print c-b" style="grid-column:8 / span 4;--r:1.5deg;margin-top:90px">
+      <span class="tape" style="--tr:-3deg"></span><div class="ph" style="aspect-ratio:1350/1800"><img src="img/wed-agave-carved.jpg" alt="Close-up of an agave leaf carved with initials, hearts and the words LAS AMO" loading="lazy"></div>
+      <figcaption>love notes, carved</figcaption>
+    </figure>
     <div class="c-c" style="grid-column:1 / span 12;margin-top:48px">
       <p class="note" style="transform:rotate(-1deg)">I took lots of car photos for Mateo, per his request.</p>
     </div>
-    <div class="table-strip" id="wed-cars" style="margin-top:14px">
-      <figure class="print" style="--r:-2deg"><span class="tape"></span><div class="ph ph-titanium grain"></div><figcaption>for Mateo</figcaption></figure>
-      <figure class="print" style="--r:1.5deg"><span class="tape" style="--tr:4deg"></span><div class="ph ph-ria grain"></div><figcaption>for Mateo</figcaption></figure>
-      <figure class="print" style="--r:-1deg"><span class="tape"></span><div class="ph ph-titanium grain"></div><figcaption>for Mateo</figcaption></figure>
-      <figure class="print" style="--r:2.5deg"><span class="tape" style="--tr:-3deg"></span><div class="ph ph-ria grain"></div><figcaption>for Mateo</figcaption></figure>
+    <div class="table-strip cars" id="wed-cars" style="margin-top:14px">
+      <figure class="print" style="--r:-1.5deg"><span class="tape" style="--tr:-3deg"></span><div class="ph" style="aspect-ratio:1800/1352"><img src="img/wed-car-ferrari.jpg" alt="A yellow model Ferrari, number 14, its doors and hood open, on a shop shelf" loading="lazy"></div><figcaption>a yellow Ferrari</figcaption></figure>
+      <figure class="print" style="--r:2deg"><span class="tape" style="--tr:4deg"></span><div class="ph" style="aspect-ratio:1800/1350"><img src="img/wed-car-porsche.jpg" alt="A white Lego Porsche 911 on a shelf" loading="lazy"></div><figcaption>a Lego Porsche 911</figcaption></figure>
+      <figure class="print" style="--r:-1deg"><span class="tape" style="--tr:-2deg"></span><div class="ph" style="aspect-ratio:1800/1350"><img src="img/wed-car-lego-defender.jpg" alt="A green Lego Technic Land Rover Defender with its hood up" loading="lazy"></div><figcaption>a Lego Defender</figcaption></figure>
+      <figure class="print" style="--r:1.5deg"><span class="tape" style="--tr:3deg"></span><div class="ph" style="aspect-ratio:1800/1350"><img src="img/wed-car-defender.jpg" alt="A real dark green Land Rover Defender parked on a Biarritz shopping street" loading="lazy"></div><figcaption>the real Defender</figcaption></figure>
+      <figure class="print" style="--r:-2deg"><span class="tape" style="--tr:-4deg"></span><div class="ph" style="aspect-ratio:1350/1800"><img src="img/wed-car-window.jpg" alt="A shop window with a green car drawn front and back, its headlights and taillights really lit" loading="lazy"></div><figcaption>headlights in a window</figcaption></figure>
+      <figure class="print" style="--r:2.5deg"><span class="tape" style="--tr:5deg"></span><div class="ph" style="aspect-ratio:1351/1800"><img src="img/wed-car-mini.jpg" alt="A classic dark green Mini turning past a caf&eacute;" loading="lazy"></div><figcaption>a classic Mini</figcaption></figure>
+      <figure class="print" style="--r:-1deg"><span class="tape" style="--tr:-3deg"></span><div class="ph" style="aspect-ratio:1800/1350"><img src="img/wed-car-ami-front.jpg" alt="A tiny pale grey Citro&euml;n Ami with an orange number 2, in a parking garage" loading="lazy"></div><figcaption>a Citro&euml;n Ami</figcaption></figure>
+      <figure class="print" style="--r:1.5deg"><span class="tape" style="--tr:3deg"></span><div class="ph" style="aspect-ratio:1800/1350"><img src="img/wed-car-ami-back.jpg" alt="The Citro&euml;n Ami from behind" loading="lazy"></div><figcaption>the Ami, from behind</figcaption></figure>
+      <figure class="print" style="--r:-2deg"><span class="tape" style="--tr:-2deg"></span><div class="ph" style="aspect-ratio:1800/1350"><img src="img/wed-car-ami-side.jpg" alt="The Citro&euml;n Ami from the side, the same shape front and back" loading="lazy"></div><figcaption>the Ami, side view</figcaption></figure>
     </div>
   </div>
 </section>
@@ -853,6 +883,18 @@ footer .note{color:var(--light)}
     <div class="word c-a" style="grid-column:2 / span 4;--r:-1.5deg;margin-top:44px">
       <p class="eu">Zorionak!</p>
       <dl><dt>es</dt><dd>¡Felicidades!</dd><dt>fr</dt><dd>Joyeux anniversaire</dd><dt>en</dt><dd>Happy birthday</dd></dl>
+    </div>
+  </div>
+</section>
+
+<section class="scene">
+  <div class="bg ph grain"><img src="img/wed-maman.jpg" alt="Under the legs of Louise Bourgeois&rsquo;s giant bronze spider Maman, the curving titanium of the Guggenheim behind" style="--pos:50% 45%"><div class="scrim"></div></div>
+  <div class="over">
+    <div class="beat top">
+      <div class="words">
+        <div class="stamp">Bilbao · the Guggenheim</div>
+        <p class="note" style="color:#fff;margin-top:12px;transform:rotate(-1.5deg)">Maman, by Louise Bourgeois</p>
+      </div>
     </div>
   </div>
 </section>
@@ -895,6 +937,10 @@ footer .note{color:var(--light)}
           <dt>What</dt><dd>a West Highland terrier about 40 feet tall, planted with thousands of living flowers, guarding the museum entrance</dd>
         </dl>
       </div>
+      <figure class="print" style="--r:1.5deg;margin-top:34px">
+        <span class="tape" style="--tr:-3deg"></span><div class="ph" style="aspect-ratio:1350/1800"><img src="img/wed-titanium.jpg" alt="Close-up of the Guggenheim&rsquo;s titanium scales, softly rippled and streaked with light" loading="lazy"></div>
+        <figcaption>titanium scales</figcaption>
+      </figure>
     </div>
     <div class="c-c" style="grid-column:2 / span 5;margin-top:56px">
       <div class="word" style="--r:-1deg">
