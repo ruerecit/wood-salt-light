@@ -120,6 +120,7 @@ figure{margin:0}
 .ph>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--pos,50% 50%);display:block}
 .credit{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--graphite);margin-top:10px}
 .print figcaption{position:absolute;left:12px;right:12px;bottom:6px;font-family:var(--hand);color:var(--pen);font-size:1.45rem;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.print figcaption.long{position:static;white-space:normal;overflow:visible;margin:10px 2px -26px}
 .tape{position:absolute;top:-12px;left:50%;width:84px;height:24px;transform:translateX(-50%) rotate(var(--tr,-3deg));background:rgba(232,226,205,.72);box-shadow:0 1px 1px rgba(0,0,0,.06);z-index:2}
 .sketch{position:relative;aspect-ratio:var(--ar,3/4);max-width:100%;border:1.5px dashed rgba(46,76,120,.38);border-radius:3px;display:grid;place-items:center;text-align:center;padding:20px;background:
   linear-gradient(rgba(46,76,120,.05) 1px,transparent 1px) 0 0/22px 22px,linear-gradient(90deg,rgba(46,76,120,.05) 1px,transparent 1px) 0 0/22px 22px,#eef0ec}
@@ -554,7 +555,7 @@ footer .note{color:var(--light)}
     </figure>
     <figure class="print c-c" style="grid-column:2 / span 10;--r:-.8deg;margin-top:44px">
       <span class="tape" style="--tr:2deg"></span><div class="ph" style="aspect-ratio:4/3"><img src="img/mon-borda-lunch-table.jpg" alt="Everyone smiling around the long live-edge wooden table, set with white bowls and wine glasses, under the concrete ceiling and colourful portraits" loading="lazy"></div>
-      <figcaption>around the table: Nagore, Mikel, Dennis, Javier, Tamra, Clairanne, Bethany, and me</figcaption>
+      <figcaption class="long">around the table: Nagore, Mikel, Dennis, Javier, Tamra, Clairanne, Bethany, and me</figcaption>
     </figure>
 
     <div class="word c-d" style="grid-column:2 / span 4;--r:1deg;margin-top:40px">
@@ -741,7 +742,7 @@ footer .note{color:var(--light)}
     </div>
     <figure class="print c-b" style="grid-column:7 / span 6;--r:1.2deg">
       <span class="tape" style="--tr:-3deg"></span><div class="ph" style="aspect-ratio:1297/971"><img src="img/tue-getaria-group.jpg" alt="The group of six smiling at a white railing above a sandy beach, the bay and green headlands behind" loading="lazy"></div>
-      <figcaption>together, by the sea: Joserra, Bethany, Clairanne, me, Tamra, Dennis</figcaption>
+      <figcaption class="long">together, by the sea: Joserra, Bethany, Clairanne, me, Tamra, Dennis</figcaption>
     </figure>
     <figure class="print c-a" style="grid-column:1 / span 4;--r:-1.5deg;margin-top:50px">
       <span class="tape" style="--tr:3deg"></span><div class="ph" style="aspect-ratio:1180/1800"><img src="img/tue-getaria-tower.jpg" alt="A narrow old street of stone houses and wooden balconies leading to the church bell tower" loading="lazy"></div>
@@ -838,6 +839,10 @@ footer .note{color:var(--light)}
       </div>
       <p class="note big" style="margin-top:14px;transform:rotate(-1.5deg)">Shopping, coffee, cake, lunch, chill.</p>
     </div>
+    <figure class="print c-c" style="grid-column:2 / span 8;--r:-1deg;margin-top:40px">
+      <span class="tape" style="--tr:2deg"></span><div class="ph" style="aspect-ratio:1800/1347"><img src="img/wed-coffee-cake.jpg" alt="Four friends smiling at a tall wooden caf&eacute; table on a sunny Biarritz street, coffee cups and cake on the table" loading="lazy"></div>
+      <figcaption class="long">Laura, Clairanne, Bethany and I had a mid-morning, leisurely coffee-and-cake break.</figcaption>
+    </figure>
     <div class="c-b" style="grid-column:9 / span 4;margin-top:10px">
       <div class="word" style="--r:1deg">
         <p class="eu">11 novembre</p>
@@ -899,7 +904,7 @@ footer .note{color:var(--light)}
       <p class="note big" style="margin-top:8px;transform:rotate(-1.5deg)">the flaky salt that we&rsquo;ve been dreaming about!</p>
     </div>
     <div style="grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;align-items:start;margin-top:30px">
-      <figure class="print" style="--r:-1.5deg"><span class="tape" style="--tr:3deg"></span><div class="ph" style="aspect-ratio:1800/1350"><img src="img/wed-gifts.jpg" alt="Birthday gifts on a dark table: a box of Sal de A&ntilde;ana salt flakes, bags from Maison Arost&eacute;guy and Pari&egrave;s, a box of Pari&egrave;s macarons, and an envelope addressed to Elba" loading="lazy"></div><figcaption>the salt, the macarons, the card</figcaption></figure>
+      <figure class="print" style="--r:-1.5deg"><span class="tape" style="--tr:3deg"></span><div class="ph" style="aspect-ratio:1800/1350"><img src="img/wed-birthday-lunch.jpg" alt="The group raising glasses of champagne around a lunch table in a sunny, warmly decorated Biarritz restaurant" loading="lazy"></div><figcaption>a birthday toast, with champagne</figcaption></figure>
       <figure class="print" style="--r:2deg"><span class="tape" style="--tr:-4deg"></span><div class="ph" style="aspect-ratio:1800/1350"><img src="img/wed-card.jpg" alt="The open birthday card, with handwritten wishes from Clairanne, Dennis, Laura, Tamra and Bethany" loading="lazy"></div><figcaption>birthday wishes</figcaption></figure>
     </div>
     <div class="word c-a" style="grid-column:2 / span 4;--r:-1.5deg;margin-top:44px">
