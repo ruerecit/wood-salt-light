@@ -16,6 +16,15 @@
 .print.map{padding:0;background:none}
 @media (min-width:761px){.gehry-col{margin-top:-200px}}
 @media (max-width:760px){#wed-guggenheim [style*="top:-5"]{top:0!important}}
+@media (max-width:760px){
+  #wed-guggenheim>.spread>*,#wed-guggenheim .gehry-col>*{grid-column:1/-1!important}
+  #wed-guggenheim>.spread>*{order:5}
+  #wed-guggenheim>.spread>:nth-child(-n+2){order:1}
+  #wed-guggenheim>.spread>:nth-child(3){order:3}
+  #wed-guggenheim .gehry-col{display:contents}
+  #wed-guggenheim .gehry-col>:first-child{order:2;width:100%!important;margin:0!important;top:0!important}
+  #wed-guggenheim .gehry-col>:last-child{order:4;width:100%!important;margin:0!important}
+}
 .sketch-credit a{color:inherit;text-decoration:underline;text-underline-offset:2px}
 </style>
 <title>Wood, Salt &amp; Light</title>
@@ -1006,7 +1015,7 @@ footer .note{color:var(--light)}
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start;margin:26px 0 30px">
           <figure class="print" style="--r:-2deg"><span class="tape" style="--tr:-3deg"></span><div class="ph" style="aspect-ratio:1350/1800"><img src="img/wed-serra-dennis.jpg" alt="Dennis peeking around the edge of a tall steel wall inside the sculpture, grinning" loading="lazy"></div><figcaption class="long">Dennis, peekaboo!&nbsp;:)</figcaption></figure>
-          <figure class="print" style="--r:2deg"><span class="tape" style="--tr:4deg"></span><div class="ph" style="aspect-ratio:1350/1800"><img src="img/wed-serra-inside.jpg" alt="Inside the sculpture: leaning walls of rust-orange steel narrowing toward a slice of white ceiling" loading="lazy"></div><figcaption>where does it end?</figcaption></figure>
+          <figure class="print" style="--r:2deg"><span class="tape" style="--tr:4deg"></span><div class="ph" style="aspect-ratio:1350/1800"><img src="img/wed-serra-inside.jpg" alt="Inside the sculpture: leaning walls of rust-orange steel narrowing toward a slice of white ceiling" loading="lazy"></div><figcaption class="long">where does it end?</figcaption></figure>
         </div>
     </div>
     <div class="c-b" style="grid-column:9 / span 4;align-self:end;margin-bottom:20px;position:relative;top:-50px">
