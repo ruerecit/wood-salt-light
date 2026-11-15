@@ -1379,5 +1379,23 @@ footer .note{color:var(--light)}
 })();
 </script>
 
+<script>
+/* Always open at the start page: no restored scroll position, no day anchor left in the address bar */
+(function(){
+  if('scrollRestoration' in history) history.scrollRestoration='manual';
+  function toTop(){
+    if(location.hash) history.replaceState(null,'',location.pathname+location.search);
+    var h=document.documentElement,b=h.style.scrollBehavior; h.style.scrollBehavior='auto'; window.scrollTo(0,0); h.style.scrollBehavior=b;
+  }
+  toTop();
+  window.addEventListener('load',toTop);
+  window.addEventListener('pageshow',function(e){if(e.persisted) toTop();});
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href^="#"]'); if(!a) return;
+    var id=a.getAttribute('href').slice(1), el=id&&document.getElementById(id); if(!el) return;
+    e.preventDefault(); el.scrollIntoView({behavior:'smooth'});
+  });
+})();
+</script>
 </body>
 </html>
