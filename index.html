@@ -18,11 +18,15 @@
 @media (max-width:760px){#wed-guggenheim [style*="top:-5"]{top:0!important}}
 @media (max-width:760px){
   #wed-guggenheim>.spread>*,#wed-guggenheim .gehry-col>*{grid-column:1/-1!important}
-  #wed-guggenheim>.spread>*{order:5}
+  #wed-guggenheim>.spread>*{order:10}
   #wed-guggenheim>.spread>:nth-child(-n+2){order:1}
   #wed-guggenheim>.spread>:nth-child(3){order:3}
-  #wed-guggenheim .rs-detail{order:6}
-  #wed-guggenheim .gg-after{order:7}
+  #wed-guggenheim .fk-col{display:contents}
+  #wed-guggenheim .fk-col>*{order:10;grid-column:1/-1}
+  #wed-guggenheim #flavin-col{order:10;width:72%;margin:18px 0 26px 6%!important}
+  #wed-guggenheim .fk-col>.kus-txt,#wed-guggenheim #flavin-col~*{order:11}
+  #wed-guggenheim #flavin-col~.rs-detail{order:12}
+  #wed-guggenheim #flavin-col~.gg-after{order:13}
   #wed-guggenheim .gehry-col{display:contents}
   #wed-guggenheim .gehry-col>:first-child{order:2;width:100%!important;margin:0!important;top:0!important}
   #wed-guggenheim .gehry-col>:last-child{order:4;width:100%!important;margin:0!important}
@@ -1040,15 +1044,15 @@ footer .note{color:var(--light)}
       </div>
     </div>
 
-    <div class="c-a" style="grid-column:1 / span 7">
+    <div class="c-a fk-col" style="grid-column:1 / span 7">
       <div class="essay" style="margin-top:10px">
         <p>Dan Flavin&rsquo;s <i>Some Light</i>! Who knew that light could be so unsettling so fast! Heart palpitations, dizziness, disorientation.</p>
       </div>
-      <p class="note big" style="margin-top:22px;transform:rotate(-1.5deg)">Kusama!</p>
+      <div class="kus-txt"><p class="note big" style="margin-top:22px;transform:rotate(-1.5deg)">Kusama!</p>
       <div class="essay" style="margin-top:6px">
         <p>By accident, Clairanne and I stumbled upon Yayoi Kusama&rsquo;s <i>Infinity Mirrored Room &ndash; A Wish for Human Happiness Calling from Beyond the Universe</i>. With the room to ourselves, we had fun like little girls, giggling and in tears!</p>
       </div>
-      <p class="note big" style="margin-top:10px;transform:rotate(-1deg)">What a treat! That is the power of the late Kusama.</p>
+      <p class="note big" style="margin-top:10px;transform:rotate(-1deg)">What a treat! That is the power of the late Kusama.</p></div>
     </div>
     <div class="c-b" style="grid-column:9 / span 3;margin-top:clamp(-88px,calc(98.6px - 15.8vw),0px)" id="flavin-col"><figure class="print" style="--r:2deg"><span class="tape" style="--tr:-3deg"></span><div class="ph" style="aspect-ratio:1/1"><img style="--pos:50% 0%" src="img/wed-flavin.jpg" alt="Vertical bars of red light against a violet wall, streaks of blue light reflected across it" loading="lazy"></div><figcaption class="long">heart palpitations</figcaption></figure></div>
     <div class="c-a" style="grid-column:1 / span 7;margin-top:30px"><figure class="print" style="--r:-1deg"><span class="tape" style="--tr:-4deg"></span><div class="ph" style="aspect-ratio:1350/1800"><img src="img/wed-kusama-ceiling.jpg" alt="Looking up at the mirrored ceiling: Elba and Clairanne reflected upside down among floating coloured lights" loading="lazy"></div><figcaption>Yes, laying down!&nbsp;:)</figcaption></figure></div>
